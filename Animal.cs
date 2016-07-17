@@ -5,34 +5,28 @@ namespace Zoolandia
     public class Animal
     //list generic animal properties
     {
-       public string name {get; set;}
-       public string legs {get; set;}
-       public string height {get; set;}
-       public string weight {get; set;}
+       public string Name {get; set;}
+       public string Legs {get; set;}
+       public string Height {get; set;}
+       public string Weight {get; set;}
 
 
-       public string sleep()
+       public string Sleep()
        {
            return "Zzzzz";
            
        }
 
-       public string eat (int numberOfFoodz)
+       public virtual string Eat(int numberOfFoodz)
        {
-           if (numberOfFoodz <= 5 )
+           if (numberOfFoodz <=0)
            {
-               return "CHOMP";
+               return "your starving eat!!";
            }
-           else if (numberOfFoodz <= 10 )
+           else
            {
-                return "normal chew";
+               return "normal chewing";
            }
-           else if (numberOfFoodz <= 20)
-           {
-               return "swallow already";
-           }
-           
-          
        }
 
        private string scratch ()
