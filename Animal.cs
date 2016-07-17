@@ -1,14 +1,21 @@
 using System;
+using Zoolandia.Species;
 
 namespace Zoolandia
 {
     public class Animal
+
+
     //list generic animal properties
     {
+        public Animal (string name)
+        {//constructor
+            this.Name = name;
+        }
        public string Name {get; set;}
-       public string Legs {get; set;}
-       public string Height {get; set;}
-       public string Weight {get; set;}
+       public int Legs {get; set;}
+       public double Height {get; set;}
+       public double Weight {get; set;}
 
 
        public string Sleep()
