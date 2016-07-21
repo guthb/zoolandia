@@ -8,31 +8,42 @@ namespace Zoolandia
         public static void Main(string[] args)
         {
             Pikachu yellowMouse = new Pikachu("Fred");
-            string pikachu_response = yellowMouse.Eat(0);
+            string pikachu_response = yellowMouse.Eat(5);
             string pikachu_action = yellowMouse.Fly(); 
-            Console.WriteLine(yellowMouse.Name + " says "+pikachu_response);
+            Console.WriteLine(yellowMouse.Name + " says "+ pikachu_response);
             Console.WriteLine("I have a Pikachu called " + yellowMouse.Name  + " who can Fly by taking his arms " + 
             pikachu_action) ;
 
 
             Piplup bluePenguin = new Piplup("Sam");
-            string piplup_action = bluePenguin.Skip();
+            string piplup_action = bluePenguin.Eat(3);
+            string piplup_response = bluePenguin.Skip();
             Console.WriteLine("I have a Piplup called " + bluePenguin.Name  + "ho can skip  by doing a " + piplup_action) ;
             Console.WriteLine( bluePenguin.Name + "has how many Legs? ....." + bluePenguin.Legs); 
 
             Radicate redRat = new Radicate("Moe");
             string radicate_action = redRat.Fang();
-            string radicate_response = redRat.Claw();
+            string radicate_response = redRat.Eat(2);
+            string radicate_action2 = redRat.Fang();
+            string radicate_action3 = redRat.Claw();
             Console.WriteLine("I have a Radicate called " + redRat.Name  + " and when provoked will " + radicate_action) ;
             Console.WriteLine( redRat.Name + " is pretty heavy at " + redRat.Weight + " lbs."); 
+            Console.WriteLine(redRat.Name + " says " + radicate_response);
+            
             
             
             Squirtle blueTurtle = new Squirtle("Chuck");
             string blueTurtle_action = blueTurtle.Spin();
             string blueTurtle_response = blueTurtle.Eat(6);
-            Console.WriteLine("I have a Squirtle called " + blueTurtle.Name  + " and " + radicate_action) ;
+            Console.WriteLine("I have a Squirtle called " + blueTurtle.Name  + " and " + blueTurtle_response) ;
             Console.WriteLine( blueTurtle.Name + " is ready pull " + blueTurtle_action); 
             
+
+            
+
+
+
+            Console.ReadLine(); 
 
         }
 

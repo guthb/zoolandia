@@ -2,7 +2,8 @@
 //Rat
 //weight 40.8 lbs
 
-using System;
+
+
 
 namespace Zoolandia.Species
 {
@@ -12,9 +13,9 @@ namespace Zoolandia.Species
       {//constuctor
           this.Legs = 4;
           this.Height = 1.08;
-          this.Weight =40.8;
+          this.Weight = 40.8;
           
-      } 
+      } //methods
 
       public string Catagory()
       {
@@ -35,6 +36,20 @@ namespace Zoolandia.Species
       {
         return "Nails of Death";
       }
+
+      public override string Eat(int numberOfFoodz)
+       { //Virtual for excercise 2
+             
+          if (numberOfFoodz <=0)
+          {
+              return base.Eat(numberOfFoodz) +  "G ive me some Corn!!";
+          }
+          else
+          {
+              return base.Eat(numberOfFoodz) + " Can i swallow " + numberOfFoodz + " kernals yet?";
+          }
+                
+        }
     }
 
 }
