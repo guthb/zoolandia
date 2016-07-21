@@ -38,8 +38,11 @@ namespace Zoolandia
             Console.WriteLine("I have a Squirtle called " + blueTurtle.Name  + " and " + blueTurtle_response) ;
             Console.WriteLine( blueTurtle.Name + " is ready pull " + blueTurtle_action); 
             
-
-            
+            //excersice 3
+            Console.WriteLine("enter a number of legs please");
+            int numberOfLegs = Int32.Parse(Console.ReadLine());
+            Pikachu leggyPikachu = new Pikachu(numberOfLegs);
+            Console.WriteLine ("leggyPikachu has " + leggyPikachu.Legs + " legs");
 
 
 

@@ -15,6 +15,11 @@ namespace Zoolandia.Species
           this.Weight =13.2;
       } 
 
+      public Pikachu(int legs) :base(legs)
+      {
+          this.Legs = legs;
+      }
+
       public string Catagory()
       {
           return "mouse";

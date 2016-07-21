@@ -12,10 +12,21 @@ namespace Zoolandia
         {//constructor
             this.Name = name;
         }
+
+        public Animal (int legs)
+        {
+            this.Legs = legs;
+        }
+        
+
+
        public string Name {get; set;}
        public int Legs {get; set;}
        public double Height {get; set;}
        public double Weight {get; set;}
+
+
+
 
 
        public string Sleep()
