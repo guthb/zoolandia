@@ -2,7 +2,7 @@
 //mouse
 //weight 13.2 lbs
 
-using System;
+
 
 namespace Zoolandia.Species
 {
@@ -33,6 +33,22 @@ namespace Zoolandia.Species
       {
         return "lighting bolts of death";
       }
+
+      public override string Eat(int numberOfFoodz)
+       {//Virtual for excercise 2
+        
+      
+        if (numberOfFoodz <=0)
+          {
+              return base.Eat(numberOfFoodz) +  "Not Hungry";
+          }
+          else
+          {
+              return base.Eat(numberOfFoodz) +  numberOfFoodz + " Bubblegum takes a long time";
+          }
+      
+       }
+
     }
 
 }

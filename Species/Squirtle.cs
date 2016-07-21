@@ -2,7 +2,7 @@
 //tiny turtle
 //weight 19.8 lbs
 
-using System;
+
 
 namespace Zoolandia.Species
 {
@@ -33,6 +33,24 @@ namespace Zoolandia.Species
       {
         return "Squirt of waterr";
       }
+
+      public override string Eat(int numberOfFoodz)
+       {//Virtual for excercise 2
+          
+
+      
+        if (numberOfFoodz <=0)
+          {
+              return base.Eat(numberOfFoodz) +  "Can i please eat!!";
+          }
+          else
+          {
+              return base.Eat(numberOfFoodz) + "of "  + numberOfFoodz + " cookies takes a long time to chew.";
+          }
+      
+      
+       }
+
     }
 
 }

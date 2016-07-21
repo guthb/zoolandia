@@ -34,6 +34,21 @@ namespace Zoolandia.Species
       {
         return "Blast of audio death";
       }
+   
+      public override string Eat(int numberOfFoodz)
+       {//Virtual for excercise 2
+           
+          if (numberOfFoodz <=0)
+          {
+              return base.Eat(numberOfFoodz) +  "Give me some Fish!!";
+          }
+          else
+          {
+              return base.Eat(numberOfFoodz) + "Can i swallow these " + numberOfFoodz + " fish heads ";
+          }
+
+       }
+   
     }
 
 }
