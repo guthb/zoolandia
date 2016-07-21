@@ -25,7 +25,7 @@ namespace Zoolandia
        }
 
        public virtual string Eat(int numberOfFoodz)
-       {
+       {//Virtual for excercise 2
            if (numberOfFoodz <=0)
            {
                return "your starving eat!!";
