@@ -44,6 +44,22 @@ namespace Zoolandia
             Pikachu leggyPikachu = new Pikachu(numberOfLegs);
             Console.WriteLine ("leggyPikachu has " + leggyPikachu.Legs + " legs");
 
+            Console.WriteLine("enter the number of jumps");
+            string squirtlePhrase;
+            int numberOfJumps = Int32.Parse(Console.ReadLine());
+            if (numberOfJumps <= 5){
+                squirtlePhrase = "Bless your Heart";
+            }
+            else
+            {
+                squirtlePhrase = "Haven't seen you in a month of sunday's";
+            }
+
+            Squirtle jumpySquirtle = new Squirtle(numberOfJumps, squirtlePhrase);
+            Console.WriteLine ("jumpySquirtle has jumped " + jumpySquirtle.NumberOfJumps +" and said " + jumpySquirtle.SouthernPhrase);
+            
+                
+    
 
 
             Console.ReadLine(); 
