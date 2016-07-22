@@ -15,6 +15,13 @@ namespace Zoolandia.Species
           this.Weight =13.2;
       } 
 
+      public Squirtle( int numberOfJumps, string southernphrase) : base(numberOfJumps,southernphrase)
+      {
+        this.NumberOfJumps =numberOfJumps;
+        this.SouthernPhrase = southernphrase;
+      }
+
+
     public string Catagory()
       {
           return "turtle";

@@ -38,9 +38,28 @@ namespace Zoolandia
             Console.WriteLine("I have a Squirtle called " + blueTurtle.Name  + " and " + blueTurtle_response) ;
             Console.WriteLine( blueTurtle.Name + " is ready pull " + blueTurtle_action); 
             
+            //excersice 3
+            Console.WriteLine("enter a number of legs please");
+            int numberOfLegs = Int32.Parse(Console.ReadLine());
+            Pikachu leggyPikachu = new Pikachu(numberOfLegs);
+            Console.WriteLine ("leggyPikachu has " + leggyPikachu.Legs + " legs");
 
+            Console.WriteLine("enter the number of jumps");
+            string squirtlePhrase;
+            int numberOfJumps = Int32.Parse(Console.ReadLine());
+            if (numberOfJumps <= 5){
+                squirtlePhrase = "Bless your Heart";
+            }
+            else
+            {
+                squirtlePhrase = "Haven't seen you in a month of sunday's";
+            }
+
+            Squirtle jumpySquirtle = new Squirtle(numberOfJumps, squirtlePhrase);
+            Console.WriteLine ("jumpySquirtle has jumped " + jumpySquirtle.NumberOfJumps +" and said " + jumpySquirtle.SouthernPhrase);
             
-
+                
+    
 
 
             Console.ReadLine(); 

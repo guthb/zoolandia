@@ -12,10 +12,30 @@ namespace Zoolandia
         {//constructor
             this.Name = name;
         }
+        //overload takes different inputs
+        public Animal (int legs)
+        {
+            this.Legs = legs;
+        }
+        
+        //another overload with int and string
+        public Animal (int numberOfJumps, string southernphrase)
+        {
+            this.NumberOfJumps = numberOfJumps;
+            this.SouthernPhrase = southernphrase;
+        }
+
+
+
+
        public string Name {get; set;}
        public int Legs {get; set;}
        public double Height {get; set;}
        public double Weight {get; set;}
+
+       public string SouthernPhrase {get; set;}
+       public int NumberOfJumps{get; set;}
+
 
 
        public string Sleep()
@@ -40,6 +60,11 @@ namespace Zoolandia
        {
            return "itch itch itch";
        }
+
+
+        
+
+
 
     }
 }
