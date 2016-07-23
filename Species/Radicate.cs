@@ -12,7 +12,7 @@ namespace Zoolandia.Species
       public Radicate(string name) :base(name)
       {//constuctor
           this.Legs = 4;
-          this.Height = 1.08;
+          this.Height = 2.04;
           this.Weight = 40.8;
           
       } //methods

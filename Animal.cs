@@ -1,13 +1,17 @@
 using System;
-using Zoolandia.Species;
 
 namespace Zoolandia
-{
+{//Base Class Animal
     public class Animal
 
 
     //list generic animal properties
     {
+        
+        public Animal(){
+            
+        }
+        
         public Animal (string name)
         {//constructor
             this.Name = name;
@@ -25,6 +29,13 @@ namespace Zoolandia
             this.SouthernPhrase = southernphrase;
         }
 
+        //Genus
+        // public string Electric {get;set;}
+        // public string Grass {get;set;}
+        // public string Normal {get;set;}
+        // public string Poison {get;set;}
+        // public string Water {get;set;}
+        // public string Fairy{get;set;}
 
 
 
