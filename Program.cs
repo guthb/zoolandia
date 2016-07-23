@@ -59,7 +59,9 @@ namespace Zoolandia
             Console.WriteLine ("jumpySquirtle has jumped " + jumpySquirtle.NumberOfJumps +" and said " + jumpySquirtle.SouthernPhrase);
             
                 
-    
+            Blastoise purpleBlastoise = new Blastoise("Sally");
+            Console.WriteLine("New to the Zoo " + purpleBlastoise.Name + " the Blastoise");
+
 
 
             Console.ReadLine(); 

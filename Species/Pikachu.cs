@@ -6,7 +6,7 @@
 
 namespace Zoolandia.Species
 {
-    public class Pikachu : Animal  
+    public class Pikachu : Animal 
     {
       public Pikachu(string name) :base(name)
       {//constuctor
