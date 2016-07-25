@@ -2,5 +2,5 @@
 
 interface IBlast
 {
-    
+    void watercannon();
 }

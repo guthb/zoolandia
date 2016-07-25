@@ -1,26 +1,26 @@
+using System;
 using Zoolandia.Genus;
 
 namespace Zoolandia.Species
 {
-    public class Blastoise : Water
+    public class Blastoise: IBlast , ISwimming
     {
+        public void watercannon()
+        {
+            Console.WriteLine("You have been hit by the water cannons");
+        }
 
-        
-        public Blastoise (string name)
-        {//constructor
-            this.Name = name;
-            this.Catagory =  "shellfish";
+        public void breaststroke()
+        {
+            Console.WriteLine("fastest swimmer in the turtle group");
         }
         
-        
-        public Blastoise (double height, double weight)
-        {//constuctor
-            
-            this.Height = 5.03;
-            this.Weight =188.5;
-            
-        } 
 
+        public void butterfly()
+        {
+            Console.WriteLine("");
+        }
+    
         public bool battleTeeth()
         {
             return false;
@@ -28,16 +28,28 @@ namespace Zoolandia.Species
 
         public string lazerEyes()
         {
-            return "you just got stinkeyed by the lazerEyesy";
+            return "you just got stinkeyed by the lazerEyes";
         }
 
-        public  Blastoise() :base()
-        {
+        // public  Blastoise() :base()
+        // {
             
-            this.Catagory =  "shellfish";
-        }
+        //     this.Catagory =  "shellfish";
+        // }
             
-          
+        //   public Blastoise (string name) 
+        // {//constructor
+        //     this.Name = name;
+        //     this.Catagory =  "shellfish";
+        // }
+        
+        // public Blastoise (double height, double weight)
+        // {//constuctor
+            
+        //     this.Height = 5.03;
+        //     this.Weight =188.5;
+            
+        // }  
         
 
     }

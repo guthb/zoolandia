@@ -1,4 +1,6 @@
-interface ISwiming
+interface ISwimming
 {
-    
+    void breaststroke();
+    void butterfly();
+
 }

@@ -1,4 +1,5 @@
 interface IListening
 {
+    void earsUp();
     
 }
