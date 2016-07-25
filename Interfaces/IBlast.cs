@@ -1,0 +1,6 @@
+
+
+interface IBlast
+{
+    void watercannon();
+}
