@@ -9,6 +9,12 @@ namespace Zoolandia.Species
             this.Legs = legs;
         }
 
+        public Venusar (string name)
+        {//constructor
+            this.Name = name;
+        }
+
+
     }
 
 }

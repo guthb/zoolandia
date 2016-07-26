@@ -2,7 +2,7 @@ using Zoolandia.Genus;
 
 namespace Zoolandia.Species
 {
-    public class Wartortle : Water
+    public class Wartortle : Water 
     {
 
         

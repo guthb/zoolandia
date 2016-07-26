@@ -9,6 +9,10 @@ namespace Zoolandia.Species
             this.Legs = legs;
         }
 
+        public Ivysaur (string name)
+        {//constructor
+            this.Name = name;
+        }
         
 
     }
