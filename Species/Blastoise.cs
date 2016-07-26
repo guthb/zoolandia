@@ -3,7 +3,7 @@ using Zoolandia.Genus;
 
 namespace Zoolandia.Species
 {
-    public class Blastoise: IBlast , ISwimming
+    public class Blastoise: Animal, IBlast , ISwimming
     {
         public void watercannon()
         {
@@ -15,6 +15,10 @@ namespace Zoolandia.Species
             Console.WriteLine("fastest swimmer in the turtle group");
         }
         
+        public Blastoise (string name)
+        {//constructor
+            this.Name = name;
+        }
 
         public void butterfly()
         {
